@@ -2,6 +2,7 @@ import pytest
 from flask import g, session
 import sys, os
 
+# 若是用 pip install -e，無需下面兩行
 myPath = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, myPath + "/../src")
 from flaskr import create_app, db, models
